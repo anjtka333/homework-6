@@ -51,12 +51,12 @@
       </div>
     </header>
     <main>
-      <div class="container">
-        <section class="hero">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button primary button-center modal-btn" data-modal-open>Заказать услугу</button>
-        </section>
-      </div>
+      <section class="hero">
+        <div class="container">
+           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+           <button type="button" class="button primary button-center modal-btn" data-modal-open>Заказать услугу</button>
+        </div>
+      </section>
       <section class="section no-pudding">
         <div class="container">
           <h2 class="invisible">Наші переваги</h2>
@@ -362,11 +362,70 @@
             </li>
           </ul>
         </div>
+        <form action="" class="footer-form">
+          <p class="list-title list-title-light">Подпишитесь на рассылку</p>
+          <div class="footer-input-wrapper">
+            <input class="footer-email" type="email" placeholder="E-mail">
+            <button type="submit" class="button primary footer-btn">Подписаться</button>
+          </div>
+        </form>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop
+     is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close></button>
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="icon-close" width="18" height="18">
+            <use href="./img/sprite2.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="modal-form" name="signup_form" autocomplete="on" novalidate>
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <label>
+            Имя
+            <span class="modal-form-input-wrapper">
+              <input class="modal-form-input" type="text" name="username" />
+               <svg class="modal-form-icon" width="18" height="18">
+                <use href="./img/sprite2.svg#icon-person-black" ></use>
+               </svg>
+            </span>
+          </label>
+        
+          <label>
+            Телефон
+            <span class="modal-form-input-wrapper">
+            <input  class="modal-form-input" type="tel" name="tel" />
+              <svg class="modal-form-icon" width="18" height="18">
+                <use href="./img/sprite2.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label>
+            Почта
+            <span class="modal-form-input-wrapper">
+            <input  class="modal-form-input" type=email" name="email" />
+              <svg class="modal-form-icon" width="18" height="18">
+                <use href="./img/sprite2.svg#icon-emai"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label>
+            Комментарий
+            <textarea name="feedback" placeholder="Введите текст"></textarea>
+          </label>
+          <label for="accept-policy" class="modal-form-checkbox-label list-p">
+          <span class="modal-form-input-wrapper">
+          <input type="checkbox" name="accept-policy" id="accept-policy" class="modal-form-checkbox visually-hidden">
+          <svg class="modal-form-icon" width="16" height="15">
+            <use href="./img/sprite2.svg#icon-checked-withoutbg"></use>
+          </svg>
+          </span>
+            Соглашаюсь с рассылкой и принимаю &nbsp<a class="modal-form-checkbox-link" href="">Условия договора</a>
+          </label>
+          <button class="button" type="button">Отправить</button>
+        </form>
       </div>
     </div>
     
