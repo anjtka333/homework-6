@@ -287,11 +287,30 @@ svg.smal-icon {
 .list .studio-card-item:last-child {
   margin-right: 0;
 }
+.list .card-item:hover .img-overlay {
+  transform: translateY(-100%);
+}
+.img-overlay {
+  padding: 27px 82px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.12;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  position: absolute;
+  color: var(--secondary-text-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 /*portfolio card*/
 .list .card-item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
   /* border: 1px solid #eeeeee; */
 }
 .list .card-item:nth-child(3n) {
