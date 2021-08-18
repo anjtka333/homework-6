@@ -757,6 +757,7 @@ label.modal-form-checkbox-label {
   border-radius: 4px;
   fill: transparent;
   outline: none;
+  background-origin: border-box;
 }
 .modal-form-checkbox-label .modal-form-icon {
   left: -24px;
